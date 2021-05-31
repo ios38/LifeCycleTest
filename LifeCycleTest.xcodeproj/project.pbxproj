@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		50AFA80A2664A4A900B4CB50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA8092664A4A900B4CB50 /* AppDelegate.swift */; };
 		50AFA80C2664A4A900B4CB50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA80B2664A4A900B4CB50 /* SceneDelegate.swift */; };
 		50AFA80E2664A4A900B4CB50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA80D2664A4A900B4CB50 /* ViewController.swift */; };
-		50AFA8112664A4A900B4CB50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AFA80F2664A4A900B4CB50 /* Main.storyboard */; };
 		50AFA8132664A4AA00B4CB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AFA8122664A4AA00B4CB50 /* Assets.xcassets */; };
 		50AFA8162664A4AA00B4CB50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AFA8142664A4AA00B4CB50 /* LaunchScreen.storyboard */; };
+		50AFA81E2664A75F00B4CB50 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA81D2664A75F00B4CB50 /* TestViewController.swift */; };
+		50AFA8212664A86100B4CB50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 50AFA8202664A86100B4CB50 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,10 @@
 		50AFA8092664A4A900B4CB50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50AFA80B2664A4A900B4CB50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		50AFA80D2664A4A900B4CB50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50AFA8102664A4A900B4CB50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50AFA8122664A4AA00B4CB50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50AFA8152664A4AA00B4CB50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50AFA8172664A4AA00B4CB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AFA81D2664A75F00B4CB50 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AFA8212664A86100B4CB50 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 				50AFA8092664A4A900B4CB50 /* AppDelegate.swift */,
 				50AFA80B2664A4A900B4CB50 /* SceneDelegate.swift */,
 				50AFA80D2664A4A900B4CB50 /* ViewController.swift */,
-				50AFA80F2664A4A900B4CB50 /* Main.storyboard */,
+				50AFA81D2664A75F00B4CB50 /* TestViewController.swift */,
 				50AFA8122664A4AA00B4CB50 /* Assets.xcassets */,
 				50AFA8142664A4AA00B4CB50 /* LaunchScreen.storyboard */,
 				50AFA8172664A4AA00B4CB50 /* Info.plist */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LifeCycleTest;
+			packageProductDependencies = (
+				50AFA8202664A86100B4CB50 /* SnapKit */,
+			);
 			productName = LifeCycleTest;
 			productReference = 50AFA8062664A4A900B4CB50 /* LifeCycleTest.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 50AFA7FD2664A4A900B4CB50;
+			packageReferences = (
+				50AFA81F2664A86100B4CB50 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 50AFA8072664A4A900B4CB50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +134,6 @@
 			files = (
 				50AFA8162664A4AA00B4CB50 /* LaunchScreen.storyboard in Resources */,
 				50AFA8132664A4AA00B4CB50 /* Assets.xcassets in Resources */,
-				50AFA8112664A4A900B4CB50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,20 +147,13 @@
 				50AFA80E2664A4A900B4CB50 /* ViewController.swift in Sources */,
 				50AFA80A2664A4A900B4CB50 /* AppDelegate.swift in Sources */,
 				50AFA80C2664A4A900B4CB50 /* SceneDelegate.swift in Sources */,
+				50AFA81E2664A75F00B4CB50 /* TestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		50AFA80F2664A4A900B4CB50 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50AFA8102664A4A900B4CB50 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50AFA8142664A4AA00B4CB50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50AFA81F2664A86100B4CB50 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50AFA8202664A86100B4CB50 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50AFA81F2664A86100B4CB50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50AFA7FE2664A4A900B4CB50 /* Project object */;
 }
